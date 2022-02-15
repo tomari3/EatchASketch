@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Etch A Sketch</title>
+  </head>
+
+  <body>
+    <section class="left-options">
+      <div class="color-container">
+        <input type="color" id="dot-color" name="dot-color" value="#e66465" />
+      </div>
+      <button class="button-17" id="colorful">Colorful</button>
+      <button class="button-17" id="colorful-alpha">
+        Colorful and transparent?
+      </button>
+      <button class="button-17" id="greyscale">Greyscale</button>
+      <button class="button-17" id="random">Random</button>
+      <button class="button-17" id="eraser">Eraser</button>
+      <button class="button-17" id="reset">Reset</button>
+      <div class="range-slider">
+        <input
+          id="myRange"
+          class="range-slider__range"
+          type="range"
+          value="100"
+          min="0"
+          max="100"
+        />
+      </div>
+      <span id="slider-value" class="range-slider__value">0</span>
+    </section>
+
+    <main class="container"></main>
+    <section class="right-options"></section>
+  </body>
+</html>
